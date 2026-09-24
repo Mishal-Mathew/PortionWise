@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard | PortionWise</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<nav><div class="wrap nav-in"><a class="logo" href="index.html">🌱 PortionWise</a>
+<button class="burger" id="burger" aria-label="Menu">☰</button>
+<ul class="links" id="links"><li><a href="index.html">Home</a></li><li><a href="recommend.html">Recommend</a></li><li><a href="feedback.html">Feedback</a></li><li><a href="dashboard.html" class=active>Dashboard</a></li><li><a href="sustainability.html">Sustainability</a></li></ul></div></nav>
+
+<section><div class="wrap"><h2>Your waste dashboard</h2><p>Sample user data. Submit feedback to see the numbers change.</p>
+<div class="grid" style="margin-top:1.2rem">
+<div class="card"><div class="big" data-stat="mealsTracked"></div><p>Meals tracked</p></div>
+<div class="card"><div class="big" data-stat="mealsFinished"></div><p>Meals finished</p></div>
+<div class="card"><div class="big" data-stat="averageLeftover"></div><p>Average leftover</p></div>
+<div class="card"><div class="big" data-stat="foodSaved"></div><p>Food waste reduced</p></div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="card"><h3>Food left over, last 7 days</h3>
+<p>Lower is better (green bars are under 15%).</p><div class="chart" id="chart"></div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>Your estimated impact</h2>
+<div class="grid" style="margin-top:1rem">
+<div class="card"><div class="big" id="iFood"></div><p>Food saved</p></div>
+<div class="card"><div class="big" id="iWater"></div><p>Water saved (estimate)</p></div>
+<div class="card"><div class="big" id="iCo2"></div><p>CO₂ emissions avoided (estimate)</p></div></div>
+<p class="note">Estimates use illustrative factors: 1 kg of food ≈ 800 L water and 2.5 kg CO₂e.</p></div></section>
+<section style="padding-top:0"><div class="wrap form"><h2>Food waste calculator</h2>
+<form id="calcForm" class="card"><label for="taken">Food taken (grams)</label><input id="taken" type="number" min="1" value="400">
+<label for="leftG">Food left (grams)</label><input id="leftG" type="number" min="0" value="60">
+<p style="margin-top:1.2rem"><button class="btn" type="submit">Calculate</button></p></form>
+<div class="msg show" id="calcOut" role="status">Enter your amounts and press Calculate.</div></div></section>
+<footer>PortionWise – college project prototype. Recommendations are simulated, not real AI. Impact values are illustrative estimates.</footer>
+<script src="script.js"></script></body></html>

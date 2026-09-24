@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feedback | PortionWise</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<nav><div class="wrap nav-in"><a class="logo" href="index.html">🌱 PortionWise</a>
+<button class="burger" id="burger" aria-label="Menu">☰</button>
+<ul class="links" id="links"><li><a href="index.html">Home</a></li><li><a href="recommend.html">Recommend</a></li><li><a href="feedback.html" class=active>Feedback</a></li><li><a href="dashboard.html">Dashboard</a></li><li><a href="sustainability.html">Sustainability</a></li></ul></div></nav>
+
+<section><div class="wrap form"><h2>How was your recommended portion?</h2>
+<form id="fbForm" class="card" style="margin-top:1.2rem">
+<span class="q">Portion size</span><div class="opts">
+<input type="radio" name="size" id="s1" value="little"><label for="s1">Too little</label>
+<input type="radio" name="size" id="s2" value="right" checked><label for="s2">Just right</label>
+<input type="radio" name="size" id="s3" value="much"><label for="s3">Too much</label></div>
+<span class="q">How much food was left?</span><div class="opts">
+<input type="radio" name="left" id="l1" value="none" checked><label for="l1">None</label>
+<input type="radio" name="left" id="l2" value="little"><label for="l2">A little</label>
+<input type="radio" name="left" id="l3" value="half"><label for="l3">Half</label>
+<input type="radio" name="left" id="l4" value="more"><label for="l4">More than half</label></div>
+<p style="margin-top:1.4rem"><button class="btn" type="submit">Submit Feedback</button></p></form>
+<div id="fbMsg" class="msg" role="status"></div>
+<h3 style="margin-top:2rem">Your stats</h3>
+<div class="grid" style="margin-top:.8rem">
+<div class="card"><div class="big" data-stat="mealsTracked"></div><p>Meals tracked</p></div>
+<div class="card"><div class="big" data-stat="mealsFinished"></div><p>Meals finished</p></div>
+<div class="card"><div class="big" data-stat="averageLeftover"></div><p>Average leftover</p></div></div>
+</div></section>
+<footer>PortionWise – college project prototype. Recommendations are simulated, not real AI. Impact values are illustrative estimates.</footer>
+<script src="script.js"></script></body></html>

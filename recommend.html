@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recommend | PortionWise</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<nav><div class="wrap nav-in"><a class="logo" href="index.html">🌱 PortionWise</a>
+<button class="burger" id="burger" aria-label="Menu">☰</button>
+<ul class="links" id="links"><li><a href="index.html">Home</a></li><li><a href="recommend.html" class=active>Recommend</a></li><li><a href="feedback.html">Feedback</a></li><li><a href="dashboard.html">Dashboard</a></li><li><a href="sustainability.html">Sustainability</a></li></ul></div></nav>
+
+<section><div class="wrap form"><h2>Get your portion recommendation</h2>
+<p>Tell us about your last meal. This is a prototype simulation of an AI-based recommender.</p>
+<form id="recForm" class="card" style="margin-top:1.2rem">
+<label for="meal">Meal type</label>
+<select id="meal" name="meal"><option>Breakfast</option><option selected>Lunch</option><option>Dinner</option></select>
+<label for="food">Food item</label><input id="food" name="food" value="Rice and dal" required>
+<label for="hunger">Hunger level</label>
+<select id="hunger" name="hunger"><option value="low">Low</option><option value="medium" selected>Medium</option><option value="high">High</option></select>
+<label for="prev">Previous portion taken</label>
+<select id="prev" name="prev"><option value="50">Half plate (50%)</option><option value="75" selected>Three-quarter plate (75%)</option><option value="100">Full plate (100%)</option></select>
+<label for="left">Amount usually left over</label>
+<select id="left" name="left"><option value="0">None</option><option value="15" selected>A little</option><option value="50">Half</option><option value="75">More than half</option></select>
+<p style="margin-top:1.4rem"><button class="btn" type="submit">Get Recommendation</button></p></form>
+<div id="result" class="card result"><h3 id="recText"></h3>
+<div class="ring" id="ring"><span id="ringNum"></span></div>
+<div class="bar"><div id="fill"></div></div>
+<p id="recWhy"></p><p style="margin-top:1rem"><a class="btn alt" href="feedback.html">Give feedback after your meal</a></p></div>
+</div></section>
+<footer>PortionWise – college project prototype. Recommendations are simulated, not real AI. Impact values are illustrative estimates.</footer>
+<script src="script.js"></script></body></html>
