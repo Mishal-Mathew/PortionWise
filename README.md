@@ -146,53 +146,13 @@ The prototype demonstrates how a future system could incorporate machine-learnin
 
 ---
 
-## 👥 Team Members
-
-| Name     | Role                          |
-| -------- | ----------------------------- |
-| Member 1 | Website / Project Development |
-| Member 2 | Research / Documentation      |
-| Member 3 | UI / Website Development      |
-| Member 4 | Research / Presentation       |
-
-> Replace the member names and roles with the actual team information.
-
 ---
 
-## 📂 Project Structure
-
-```text
-PortionWise/
-│
-├── index.html
-├── recommend.html
-├── feedback.html
-├── dashboard.html
-├── sustainability.html
-├── style.css
-├── script.js
-│
-├── assets/
-│   └── images/
-│
-├── PPT/
-│   └── PortionWise_Presentation.pptx
-│
-├── Reports/
-│   ├── Member1_Report.pdf
-│   ├── Member2_Report.pdf
-│   ├── Member3_Report.pdf
-│   └── Member4_Report.pdf
-│
-└── README.md
-```
-
----
 
 ## 🌐 Website
 
 **Live Website:**
-[Add your deployed website link here]
+portionwise.vercel.app
 
 **GitHub Repository:**
 [Add your GitHub repository link here]
