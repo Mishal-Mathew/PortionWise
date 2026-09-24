@@ -26,7 +26,7 @@ There is a need for a simple technology-based solution that encourages users to 
 
 ---
 
-## 💡 Proposed Solution
+## 💡 Proposed SolutionS
 
 PortionWise provides personalized portion recommendations based on a user's:
 
@@ -155,7 +155,7 @@ The prototype demonstrates how a future system could incorporate machine-learnin
 portionwise.vercel.app
 
 **GitHub Repository:**
-[Add your GitHub repository link here]
+https://github.com/Mishal-Mathew/PortionWise.git
 
 ---
 
@@ -164,10 +164,7 @@ portionwise.vercel.app
 The repository contains:
 
 * Website source code
-* PowerPoint presentation
-* Individual reports
 * README documentation
-* Required project assets
 
 ---
 
